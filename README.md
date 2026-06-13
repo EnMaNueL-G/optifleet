@@ -23,20 +23,16 @@ control y espejado, e informe de salud. Pensado para talleres y granjas de dispo
 - **Modo bajo consumo** — optimizado para mantener muchos equipos conectados en sesiones largas.
 - **Privado y seguro** — licencia vinculada a tu equipo, sin anuncios ni telemetría; tus datos no salen del PC.
 
-## 🧰 Herramientas y tecnologías
+## 🧰 Características técnicas
 
-| Área | Tecnología |
-|------|-----------|
-| Aplicación de escritorio | **Electron 33** (Chromium + Node), `contextIsolation`, IPC por `contextBridge` |
-| Conexión con dispositivos | **ADB** (Android Platform-Tools), `execFile` sin shell |
-| Espejado / control | Motor de espejado integrado (basado en scrcpy) |
-| Información en vivo | Captura de pantalla periódica para el mosaico |
-| Interfaz | HTML/CSS/JS *vanilla*, gauges con `conic-gradient`, tema oscuro OptiSuite |
-| Licencias | Claves firmadas **Ed25519** (offline) + verificación Gumroad + huella de equipo + HMAC + anti-rollback |
+- **Aplicación de escritorio nativa** para Windows, segura y aislada.
+- **Conexión con dispositivos** mediante Android Platform-Tools (ADB) — incluido.
+- **Motor de espejado y vídeo en vivo propio**, con decodificación acelerada y calidad adaptativa por dispositivo.
+- **Interfaz profesional** con paneles, gauges e informe de salud, tema oscuro OptiSuite.
+- **Licencias seguras**: firma criptográfica, vinculación al equipo y verificación anti-manipulación.
 
-> **En desarrollo (próximas versiones):** multi-stream de vídeo en vivo con **WebCodecs** (H.264) y *Web Workers*,
-> calidad adaptativa por dispositivo, API REST interna, sincronización de acciones, visión por computador
-> (auto-diagnóstico) y companion para tiempos de actividad prolongados.
+> **En desarrollo (próximas versiones):** control en vivo de latencia ultrabaja, integración por API,
+> sincronización de acciones entre equipos y diagnóstico automático.
 
 ## 💵 Precio
 
